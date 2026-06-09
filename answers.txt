@@ -1,0 +1,108 @@
+============================================================
+        MACHINE LEARNING RESEARCH ACTIVITY - ANSWERS
+        Week 3 - Day 1 | AIML Internship Assignment
+        Student: Shaik Arshiya Tabasum
+============================================================
+
+Q1. What is Machine Learning?
+-------------------------------
+Machine Learning is a branch of Artificial Intelligence where computers learn
+from data and improve their performance over time without being explicitly
+programmed. Instead of writing fixed rules, we feed data to the algorithm and
+it finds patterns on its own.
+
+Example: A spam email filter learns from thousands of emails to identify
+which ones are spam — without us manually writing rules for every case.
+
+Q2. What is the difference between Features and Labels?
+---------------------------------------------------------
+Features (also called Input Variables or X):
+  - These are the input data columns used to make predictions.
+  - Example in our dataset: StudyHours, AttendancePercent, PreviousScore, ParentalSupport
+
+Labels (also called Target Variable or Y):
+  - This is the output we want to predict.
+  - Example in our dataset: ExamScore
+
+Simple analogy: If you want to predict house price —
+  Features = size, location, number of rooms
+  Label = price of the house
+
+Q3. Why do we split data into Training and Testing sets?
+---------------------------------------------------------
+We split data into:
+  - Training Set (usually 70-80%): Used to teach/train the model
+  - Testing Set (usually 20-30%): Used to evaluate how well the model performs on unseen data
+
+Reason: If we test the model on the same data it was trained on, it will always
+perform well — but that doesn't mean it will work on new, real-world data.
+Testing on unseen data gives us a fair and honest evaluation.
+
+Q4. What is Linear Regression?
+--------------------------------
+Linear Regression is a supervised machine learning algorithm used to predict
+a continuous numeric value. It finds the best-fit straight line (called the
+regression line) that describes the relationship between input features and
+the output label.
+
+Formula: y = mx + b
+  - y = predicted output (ExamScore)
+  - x = input feature (e.g., StudyHours)
+  - m = slope (coefficient/weight)
+  - b = intercept
+
+Q5. What is MAE (Mean Absolute Error)?
+----------------------------------------
+MAE measures the average of the absolute differences between actual and
+predicted values. It tells us how far off our predictions are on average.
+
+Formula: MAE = (1/n) × Σ|actual - predicted|
+
+Interpretation:
+  - MAE = 2 means our predictions are off by 2 marks on average
+  - Lower MAE = Better model performance
+
+Q6. What is R² Score (R-Squared)?
+------------------------------------
+R² Score measures how well the model explains the variance in the target variable.
+It ranges from 0 to 1:
+  - R² = 1.0 → Perfect predictions
+  - R² = 0.8 → Model explains 80% of the variance in data
+  - R² = 0.0 → Model is no better than predicting the average
+
+A good model typically has R² > 0.7
+
+Q7. What are the types of Machine Learning?
+---------------------------------------------
+1. Supervised Learning:
+   - Learns from labeled data (input + output pairs)
+   - Examples: Linear Regression, Classification
+   - Use case: Predicting exam scores, spam detection
+
+2. Unsupervised Learning:
+   - Learns from unlabeled data, finds hidden patterns
+   - Examples: Clustering, Dimensionality Reduction
+   - Use case: Customer segmentation, anomaly detection
+
+3. Reinforcement Learning:
+   - Agent learns by interacting with environment and receiving rewards/penalties
+   - Examples: Game playing AI, robotics
+   - Use case: Chess AI, self-driving cars
+
+Q8. What is Overfitting and Underfitting?
+-------------------------------------------
+Overfitting:
+  - Model learns training data TOO well, including noise
+  - Performs great on training data but poorly on new data
+  - Like memorizing answers instead of understanding concepts
+
+Underfitting:
+  - Model is too simple and fails to capture patterns
+  - Performs poorly on both training and testing data
+  - Like not studying at all before an exam
+
+Good Model = Balanced between the two (Good Generalization)
+
+============================================================
+              END OF RESEARCH ACTIVITY ANSWERS
+============================================================

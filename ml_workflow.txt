@@ -1,0 +1,84 @@
+============================================================
+       MACHINE LEARNING WORKFLOW DOCUMENTATION
+       Week 3 - Day 1 | AIML Internship Assignment
+       Student: Shaik Arshiya Tabasum
+============================================================
+
+STEP 1: DEFINE THE PROBLEM
+----------------------------
+Goal: Predict a student's Exam Score based on study habits and background.
+Type: Supervised Learning → Regression Problem
+(Because we are predicting a continuous numeric value — Exam Score)
+
+STEP 2: COLLECT DATA
+---------------------
+Dataset: student_performance.csv
+Total Records: 40 students
+Source: Simulated real-world student performance data
+
+STEP 3: EXPLORE THE DATA (EDA)
+--------------------------------
+Features (Inputs):
+  - StudyHours       : Number of hours studied per day
+  - AttendancePercent: Percentage of classes attended
+  - PreviousScore    : Score obtained in previous exam
+  - ParentalSupport  : Level of parental support (0=None, 1=Medium, 2=High)
+
+Label (Output):
+  - ExamScore        : Final exam score to be predicted
+
+Observations:
+  - Higher study hours → Higher exam score (positive correlation)
+  - Higher attendance → Better performance
+  - Previous score is a strong predictor of current score
+  - Parental support positively influences scores
+
+STEP 4: PREPROCESS THE DATA
+-----------------------------
+- Checked for missing values → None found
+- All features are numerical → No encoding needed
+- Selected relevant features for model training
+- Split data into Training Set (80%) and Testing Set (20%)
+
+STEP 5: CHOOSE THE MODEL
+--------------------------
+Model Selected: Linear Regression
+Reason:
+  - The target variable (ExamScore) is continuous
+  - There is a clear linear relationship between features and target
+  - Simple, interpretable, and effective for this type of data
+
+STEP 6: TRAIN THE MODEL
+-------------------------
+- Training data fed into Linear Regression model
+- Model learns the relationship between features and ExamScore
+- Coefficients (weights) are calculated for each feature
+
+STEP 7: EVALUATE THE MODEL
+----------------------------
+Metrics Used:
+  - MAE (Mean Absolute Error): Average difference between actual and predicted scores
+    → Lower MAE = Better model
+  - R² Score (R-Squared): How well the model explains variance in data
+    → R² closer to 1.0 = Better model
+
+STEP 8: MAKE PREDICTIONS
+--------------------------
+- Model used to predict exam scores for new/unseen student data
+- Predictions compared with actual scores to verify accuracy
+
+STEP 9: VISUALIZE RESULTS
+---------------------------
+- Scatter plot: Actual vs Predicted scores
+- Feature importance bar chart
+- Residual error plot
+
+STEP 10: CONCLUSION
+---------------------
+- Linear Regression successfully predicts student exam scores
+- Study hours and previous score are the most influential features
+- Model can be improved further with more data and advanced algorithms
+
+============================================================
+              END OF ML WORKFLOW DOCUMENTATION
+============================================================
